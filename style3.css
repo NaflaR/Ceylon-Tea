@@ -1,0 +1,40 @@
+.col::after{
+    content: "";
+    display: table-row;
+    clear: both;
+}
+.rr{
+    float: left;
+    width: auto;
+    padding: 30px;
+    font-family: Papyrus;
+}
+.rr h3{
+    font-family: Forte;
+    font-size: 2rem;
+}
+.rr1{
+    padding: 25px;
+    width: auto;
+}
+#im1{
+    margin: 10px;
+    width: fit-content;
+}
+#im2{
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+}
+.rr2{
+    margin: 10px;
+    padding: 25px;
+    font-family: Calibria;
+}
+.rr2 h3{
+    font-family: Arial Black;
+    font-size: large;
+}
+body{
+    background-color: rgb(70, 207, 136);
+}

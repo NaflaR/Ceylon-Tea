@@ -1,0 +1,30 @@
+.col::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.hhh{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: auto;
+    font-family: Times New Roman;
+}
+.hhh1{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+#im2{
+    height: 200px;
+    width: 200px;
+}
+.hhh2{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: auto;
+    font-family: Times New Roman;
+}

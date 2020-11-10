@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="msapplication-config" content="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <title>Ceylon Tea</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <header>
+            <div class="sect">
+                <div class="logo">
+                    <a href="HomePage.html"><img src="images/Logo.jpg" alt=""></a>
+                </div>
+                <url class="navbar">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="TypesOfTeaPage.html">Types Of Tea</a></li>
+                    <li><a href="SLTeaManufacturePage.html">SL Tea Manufacturers</a>
+                        <ul>
+                            <li><a href="CSS1design.html">Tea Topic 1</a></li>
+                            <li><a href="CSS2design.html">Tea Topic 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="BuyNowPage.html">Buy Now</a></li>
+                    <li><a href="ContactUsPage.html">Contact Us</a></li>
+                </url>
+            </div>
+        </header>
+        <br>
+        <div class="m1">
+            <div class="teass1">
+                <section id="tmanu">
+                    <form method="GET">
+                        <fieldset>
+                            <legend>Choice of Tea Manufacturers: </legend><br>
+                            <div class="teas1">
+                                <select id="TeaManu" name="TeaManu" onchange="team1()" class="TeaManuf">
+                                    <option value="Dilmah" id="dil" selected>Dilmah</option>
+                                    <option value="Jones" id="jon">Jones</option>
+                                    <option value="GeorgeSteuart" id="geo">George Steuart</option>
+                                    <option value="MalwatteValleyPlantations" id="mal">Malwatte valley plantations</option>
+                                    <option value="PrestigeCeylonTeas" id="pres">Prestige Ceylon Teas</option>
+                                    <option value="EmpireTeas" id="emp">Empire Teas</option>
+                                </select>
+                            </div><br>
+                        </fieldset><br>
+                    </form>
+                </section>
+            </div>
+            <div class="teass2">
+                <section id="pktype">
+                    <form method="GET">
+                        <fieldset>
+                            <legend>Choice of Packaging: </legend><br>
+                            <div class="teas2">
+                                <select id="Package" name="Package" onchange="team2()" class="Pack">
+                                    <option value="Paperpouche" id="pp">Paper pouches</option>
+                                    <option value="Tins" id="tin" selected>Tins</option>
+                                    <option value="Bags" id="bags">Bags</option>
+                                </select>
+                            </div><br>
+                        </fieldset><br>
+                    </form>
+                </section>
+            </div>
+            <div class="teass3">
+                <section id="sizetype">
+                    <form method="GET">
+                        <fieldset>
+                            <legend>Choice of Size: </legend><br>
+                            <div class="teas3">
+                                <select id="Size" name="Size" onchange="team3()" class="ss">
+                                    <option value="Small" id="s">Small</option>
+                                    <option value="Medium" id="m" selected>Medium</option>
+                                    <option value="Large" id="l">Large</option>
+                                </select>
+                            </div><br>
+                        </fieldset><br>
+                    </form>
+                </section>
+            </div>
+            <div class="teass4">
+                <section id="extratype">
+                    <form method="GET">
+                        <fieldset>
+                            <legend>Extras: </legend><br>
+                            <div class="teas4">
+                                <select id="extras" name="extras" onchange="team4()" class="ex">
+                                    <option value="mug" id="mu" selected>Mug</option>
+                                    <option value="sp" id="si" selected>Silver pin</option>
+                                    <option value="ws" id="w">Wooden souvenir</option>
+                                </select>
+                            </div><br>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div class="btnsw">
+            <button type="button" onclick="display()" >ADD TO ORDER</button>
+            <button type="button" onclick="order()">PLACE ORDER</button>
+            <button type="button" onclick="addfavourites()">ADD TO FAVOURITES</button>
+            <button type="button" onclick="orderfavourites()">ORDER TO FAVOURITES</button>
+            <button type="button" onclick="loyalty()">CHECK LOYALTY</button>
+        </div><br>
+        <div class="mm1">
+            <form id="m2">
+                <fieldset><legend>Current Tea order(s) : </legend>
+                    <label class="lab" id="cteao" for="currentT">Manufacturer Type : </label><br>
+                    <label class="lab" id="cteao1" for="currentT">Package Type : </label><br>
+                    <label class="lab" id="cteao2" for="currentT">Size Type : </label><br>
+                    <label class="lab" id="cteao3" for="currentT">Extra Type : </label><br>
+                </fieldset><br>
+                <fieldset><legend>Cost of the Current Tea order(s) : </legend>
+                    <label class="lab" id="ccteao">Current Cost : </label><br>
+                </fieldset><br>
+                <fieldset><legend>Overall order : </legend>
+                    <label class="lab" id="oo" for="overall">Orders : </label><br>
+                    <label class="lab" id="oo1" for="overall">0</label><br>
+                </fieldset> <br>
+                <fieldset><legend>Overall cost of the order : </legend>
+                    <label class="lab" id="oco" for="overallc">0</label><br>
+                </fieldset><br>
+                <fieldset><legend>Loyalty Points: </legend>
+                    <label class="lab" id="lpy" for="lpy">0</label><br>
+                </fieldset><br>
+            </form>
+        </div>
+        <br>
+        <footer class="footer">
+            <p>
+                copyright &copy; Nafla Roomy<br>
+                Email: cb008257@students.apiit.lk<br>
+                Contact Number: 0772299796<br>
+                <a href="#">Help</a><br>
+                <a href="#">Privacy and Terms</a>
+            </p>
+        </footer>
+        <script src="bnp.js"></script>
+    </body>
+</html>

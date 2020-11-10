@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sect{
+    width: auto;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/4.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.navbar{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Arial;
+    font-size: 14px;
+}
+.navbar li a:hover {
+    background: #fff;
+    color: #333;
+}
+.navbar li ul li{
+    display: none;
+}
+.navbar li:hover ul li{
+    display: inline-block;
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+}
+.sect1{
+    padding: 10px;
+    font-family: Arial Narrow;
+}
+.sect1 h1{
+    text-align: center;
+}
+.sect1 p{
+    text-align: justify;
+}
+.sect12{
+    padding: 20px;
+    font-family: Arial Narrow;
+}
+.sect12 h2{
+    margin: 20px;
+}
+#sh{
+    width:auto;
+    border: 0;
+    border-spacing: 20px;
+}
+.sect12 p {
+    text-align: left;
+    float: left;
+}
+.sect12 img{
+    float: right;
+    height: 150px;
+    width: auto;
+}
+.sect13{
+    border: 2px solid #333;
+    border-style: dashed;
+    padding: 25px;
+    text-decoration: none;
+    font-size: medium;
+    margin: 20px;
+    display: inline-block;
+    background-color: rgba(6, 177, 92, 0.2);
+}
+.sect14 {
+    padding: 30px;
+    margin: 25px;
+    border: 4px solid #0873d8;
+    border-style: dotted;
+    text-decoration: none;
+    display: grid;
+    background-color: rgba(11, 13, 161, 0.3);
+    width: 800px;
+    float: right;
+    font-family: Arial Narrow;
+}
+.sect15 img{
+    padding: 20px;
+    margin: 25px;
+}
+.footer{
+    padding: 40px;
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/4.jpg);
+    color: #fff;
+    text-align: center;    
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.sect21{
+    font-family: Comic Sans MS;
+    text-align: center;
+}
+#tt{
+    width:auto;
+    border: 0;
+    border-spacing: 20px;
+    margin: 0 auto;
+    border-collapse: separate;
+    position: relative;
+    border-radius: 6px;
+    font-family: Century Gothic;
+}
+#th{
+    font-weight: bolder;
+    font-size: larger;
+    height: 60px;
+}
+#td{
+    font-size: medium;
+    padding: 10px;
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+}
+#t1{
+    text-align: center;
+}
+#t12{
+    text-align: center;
+}
+#t13{
+    text-align: justify;
+}
+#Cont{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#Cont .cn{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: #333;
+    color: #fff;
+}
+#Cont h3, #Cont p{
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+.btn{
+    padding: .8em;
+    background-color: aquamarine ;
+    color: rgb(17,17,17);
+    text-decoration: none;
+    display: block;
+    margin: .8em auto .8em 0;
+    width: 100px;
+}
+input[type=text], select, textarea{
+    width: 50%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.myf{
+    padding: 25px;
+    margin: 20px;
+}
+.m1 , .mm1{
+    padding: 20px;
+    margin: 20px;
+}
+.btnsw{
+    padding: 10px;
+    margin: 10px;
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+   .myf, .naf, .naf1, form, .btn, .col{
+       width: 100%;
+   }
+   #Cont {
+       width: 100%;
+   }
+   .sect1, .sect12, .sect13, .sect14, .sect15{
+       width: 100%;
+   }
+}

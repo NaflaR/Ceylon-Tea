@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="msapplication-config" content="C:\Users\Nafla\Desktop\Tea App\favicon_package_v0.16/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <title>Ceylon Tea</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <header>
+            <div class="sect">
+                <div class="logo">
+                    <a href="HomePage.html"><img src="images/Logo.jpg" alt=""></a>
+                </div>
+                <url class="navbar">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="TypesOfTeaPage.html">Types Of Tea</a></li>
+                    <li><a href="SLTeaManufacturePage.html">SL Tea Manufacturers</a>
+                        <ul>
+                            <li><a href="CSS1design.html">Tea Topic 1</a></li>
+                            <li><a href="CSS2design.html">Tea Topic 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="BuyNowPage.html">Buy Now</a></li>
+                    <li><a href="ContactUsPage.html">Contact Us</a></li>
+                </url>
+            </div>
+        </header><br>
+        <div class="myf">
+            <form name="mf" onsubmit="return validateForm()" method="post">
+                <label for="fn">First Name</label><br>
+                <input type="text" id="fn" name="firstname" placeholder="Your firstname.." required><br>
+                <label for="ln">Last Name</label><br>
+                <input type="text" id="ln" name="lastname" placeholder="Your lastname.." required><br>
+                <label for="tno">Phone Number</label><br>
+                <input type="text" id="tno" name="telephoneno" placeholder="Your PhoneNo.." required><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Your email.." required><br>
+                <label for="fb">FeedBacks</label><br>
+                <textarea id="fb" name="feedbacks" placeholder="Wrtie something.." style="height:200px;">
+                </textarea><br>
+                <input type="submit" value="Submit">
+            </form>    
+        </div>
+        <br>
+        <footer class="footer">
+            <p>
+                copyright &copy; Nafla Roomy<br>
+                Email: cb008257@students.apiit.lk<br>
+                Contact Number: 0772299796<br>
+                <a href="#">Help</a><br>
+                <a href="#">Privacy and Terms</a>
+            </p>
+        </footer>
+    </body>
+    <script>
+        function validateForm() {
+            var x = document.forms["mf"]["firstname"].value;
+            if (x == "" || x == null) {
+                alert("Name must be filled out");
+                return false;
+            }
+            var y = document.forms["mf"]["lastname"].value;
+            if (y == "" || y == null) {
+                alert("Name must be filled out");
+                return false;
+            }                        
+        }
+    </script>
+</html>
